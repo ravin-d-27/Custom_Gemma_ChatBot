@@ -14,6 +14,7 @@ def pred(request):
     return render(request, 'myapp/preds.html')
 
 def find(request):
+    
     if request.method == 'POST':
         input_data = {"query":request.POST['review']}
         input_data_j = json.dumps(input_data)
